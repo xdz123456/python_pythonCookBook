@@ -1,0 +1,21 @@
+from collections import defaultdict
+
+d1 = defaultdict(list)
+d1['a'].append(1)
+d1['a'].append(2)
+d1['a'].append(11)
+d1['a'].append(2)
+d1['a'].append(2)
+d1['b'].append(112)
+d1['b'].append(12)
+print(d1)
+
+d2 = defaultdict(set)
+d2['a'].add(1)
+d2['a'].add(2)
+d2['a'].add(11)
+d2['a'].add(2)
+d2['a'].add(2)
+d2['b'].add(112)
+d2['b'].add(12)
+print(d2)
